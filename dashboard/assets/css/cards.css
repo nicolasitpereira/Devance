@@ -1,0 +1,229 @@
+main {
+  & .dashboard {
+    width: 1310px;
+    margin-bottom: 32px;
+  
+    & .cards {
+    
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    
+
+      & .card {
+        width: 248.85px;
+        background: #fff;
+        padding: 14px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        & .content {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+
+          & p {
+            color: #505050;
+            font-size: 1.125em;
+          }
+
+        }
+        & .completos {
+          display: flex;
+          margin-left: 30px;
+          gap: 20px;
+          align-items: center;
+
+          & span {
+            font-size: 3em;
+            font-weight: 700;
+            color: #393939;
+          }
+
+          & p {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+  
+    & .container {
+      overflow-y: scroll;
+      width: 100%;
+      max-height: 350px;
+      z-index: 1;
+      padding: 22px;
+      border-radius: 20px;
+
+      & .title {
+        display: flex;
+        justify-content: space-between;
+
+        & h2 {
+          font-weight: 600;
+        }
+
+        & .skills {
+          display: flex;
+          gap: 21px;
+
+          & .skill {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+
+            & p {
+              font-size: 0.75em;
+            }
+
+            & img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+
+      & .dias {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding: 6px 0;
+        border-bottom: #AFBBB9 1px solid;
+
+        & .dia {
+          display: flex;
+          gap: 44px;
+          align-items: center;
+          height: 2px;
+
+          & p {
+            width: 167px;
+          }
+
+          & .tarefas {
+            width: 100%;
+            height: 38px;
+            margin-top: 5px;
+            display: flex;
+            background: #bfc2c33d;
+            padding: 4px;
+            border-radius: 10px;
+            justify-content: space-between;
+
+            & p {
+              background-color: #243CD9;
+              color: #fff;
+              border-radius: 10px;
+              padding: 4px 12px;
+              font-weight: 600;
+            }
+
+            & .bg-hardskill {
+              background: #BB9BE5;
+            }
+
+            & p:first-child {
+              width: 36%;
+            }
+            & p:last-child {
+              width: 60%;
+            }
+
+            & .hidden {
+              width: 5%;
+            }
+          }
+        }
+
+        & .ter {
+          
+          & .tarefas {
+
+            & p:first-child {
+              width: 23%;
+            }
+
+            & p:last-child {
+              width: 70%;
+              font-size: 11px;
+              height: 28px;
+
+            }
+          }
+        }
+        & .qua {
+          
+          & .tarefas {
+
+            & p:first-child {
+              width: 40%;
+            }
+
+            & p:last-child {
+              width: 30%;
+            }
+          }
+        }
+      }
+
+      & .horas {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 150px;
+        
+        & p {
+          font-size: 0.75em;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  & aside {
+    width: 50%;
+    max-height: 349px;
+    margin-right: 5%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 26px;
+
+    & .title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      
+          & h2 {
+            color: #000;
+          }
+    }
+
+    & .cards {
+
+      display: flex;
+      height: 250px;
+      flex-direction: column;
+      gap: 40px;
+      overflow-y: scroll;
+
+      & .card {
+        background: #243cd9aa;
+        color: #fff;
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid #000000be;
+        padding-bottom: 50px;
+      }
+
+      & .bg-soft {
+         background-color: #BB9BE5;
+      }
+    }
+  }
+}

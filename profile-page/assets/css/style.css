@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e3e9f7;
+}
+
+main {
+    width: 2000px;
+    flex-direction: row;
+    margin: 23px;
+    display: flex;
+    
+    
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .7s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+span > hr {
+    background-color: #938A8A;
+    color: #938A8A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 20px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #59A5D8;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #e3e9f7;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #59A5D8;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.discord_img {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.content{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 18%;
+    background-color: #D9D9D9;
+    border-radius: 40px 0px 0px 40px;
+    
+}
+
+.config{
+    color: white;
+    width: 90%;
+    background-size: cover;
+    background-image: url(../img/planoDeFundo.jpeg);
+    border-radius: 0px 40px 40px 0px;
+}
+
+.first_content{
+    
+    margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.second_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.span_content{
+    padding:10px 0px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 60%;
+    justify-content: left;
+    border-radius: 20px;
+}
+
+
+.span_content p{
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.span_content img{
+    margin-left: 5px;
+}
+
+
+.first-config{
+    display: flex;
+    align-items: center;
+}
+
+.pencil{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.prof-pic{
+   margin: 20px;
+}
+
+/*.first-config p{
+    display: flex;
+    margin-left: 230px;
+}
+*/
+.second-config{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+.second-config p{
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 565px;
+}
+
+.inputs input{
+    border-radius: 10px;
+    outline: 0;
+    padding: 5px;
+}
+
+input[type="password"] {
+    padding-left: 10px;
+}
+
+input[type="name"] {
+    padding-left: 10px;
+}
+
+input[type="email"] {
+    padding-left: 10px;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+}
+
+.areaText{
+    margin-left: 50px;
+}
+
+.areaText textarea{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.botoes{
+    margin-left: 50px;
+}
+
+.botoes button{
+    border-radius:20px;
+    padding: 5px;
+    background-color: #00205E;
+    color: white;
+    border: 2px solid #063084;
+}
+

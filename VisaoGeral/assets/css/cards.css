@@ -1,0 +1,139 @@
+& section {
+
+    display: flex;
+
+    & .container {
+
+        padding-right: 30px;
+        overflow-y:scroll  ;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        animation: animacao 1s alternate ease-in-out;
+        
+        
+        & h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+            font-weight: 400;
+        }
+
+        & .cards {
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+           /*  & .azulcd:hover{
+                box-shadow: #fcfdfe 3px 3px 10px;
+                
+            } */
+
+            & .card:hover{
+                box-shadow: none;
+                transform: translate(10px) translateY(10px);
+            }
+
+            & .card {
+                padding: 22px;
+                background: #ffffff;
+                border-radius: 20px 0px;
+                width: 47%;
+                margin-bottom: 20px;
+                transition: .3s;
+                border: 1px solid black;
+                box-shadow: 10px 10px 0px #7110bb82;
+                
+                & .text-roxo {
+                    color: #7010BB;
+                    opacity: 0.5;
+                }
+
+                
+
+                
+                & .nome-verde {
+
+                    color: #00205E;
+                }
+
+                & .color-tutor{
+                    font-weight: bold;
+                    color: #00205E;
+                }
+
+
+                
+
+                & .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-bottom: 30px;
+
+                    & h3 {
+                        font-size: 1.5em ;
+                    }
+
+                    & img {
+                        width: 46px;
+                        height: 46px;
+                    }
+                }
+                & .tutor {
+                    display: flex;
+                    justify-content: space-between;
+
+                    & button {
+                        padding: 5px 16px;
+                        border-radius: 5px ;
+                        border: 1px solid #00205E;
+                        transition: .3s;
+                        cursor: pointer;
+                        color: #ffffff;
+                    }
+
+                    & .blue {
+                        background-color: #00205E;
+                    }
+                    & .blue:hover{
+                        background-color: #02102d;
+                    }
+
+                    & .roxo:hover {
+                        background-color: #7010BB;
+                        opacity: 1;
+                    }
+
+                    & .roxo {
+                        background-color: #7010BB;
+                        opacity: 0.5;
+                    }
+
+
+            }
+        }
+    }
+
+}
+}
+
+.area-especializacao {
+    margin-left: 12px;
+}
+
+@keyframes animacao {
+    100% {
+        transform: translateY(0);
+
+    }
+
+ 
+
+    0%{
+        transform: translateY(-100px);
+        
+    }
+}

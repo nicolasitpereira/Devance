@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/progress.css">
+    <title>Devance</title>
+</head>
+
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <i class='fas fa-user-circle' style='font-size:48px;color:rgb(88, 88, 88)'></i>
+                <p id="user_infos">
+                    <span class="item-description">
+                        Marianna Dias
+                    </span>
+                    <span class="item-description">
+                        Aluno(a)
+                    </span>
+                </p>
+            </div>
+            <ul id="side_items">
+                <span>
+                    <hr></span>
+                <li class="side-item">
+                    <a href="../VisaoGeral/index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="item-description">
+                            Visão Geral
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="../dashboard/index.html">
+                        <i class='fas fa-chart-pie' style='font-size:18px'></i>
+                        <span class="item-description">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="../ExplorarCurso/index.html">
+                        <i class="fa fa-graduation-cap" style="font-size:18px"></i>
+                        <span class="item-description">
+                            Explorar Cursos
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa fa-comment" style="font-size:18px"></i>
+                        <span class="item-description">
+                            Fórum
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-brands fa-discord"></i>
+                        <span class="item-description">
+                            Mapeamento
+                        </span>
+                    </a>
+                </li>
+                <span>
+                    <hr></span>
+                <li class="side-item">
+                    <a href="#">
+                        <i class='fas fa-headphones' style='font-size:18px'></i>
+                        <span class="item-description">
+                            Central de Ajuda
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="../profile-page/index.html">
+                        <i class='fas fa-cog' style='font-size:18px'></i>
+                        <span class="item-description">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="item-description">
+                    logout
+                </span>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section id="section1" class="active-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon"><img src="assets/img/robozinho.png" alt=""></div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Bem-Vindo!</h2>
+                        <form id="ageForm">
+                            <p>Olá, Player! Sou o Devs e vou te ajudar nessa nova jornada de T.I. Prepare-se para
+                                desbloquear habilidades e conquistar cada fase. São só 6 perguntinhas. Vamos nessa?
+                            </p>
+                            <button type="submit" id="nextButton">Próxima Fase</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2"><img src="assets/img/robozinho-escrevendo.png" alt=""></div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Fase Inicial: Identidade</h2>
+                        <form id="identityForm">
+                            <label for=" nome">Qual é seu nome?</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            <label for="apelido">Tem algum apelido?</label>
+                            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" required>
+                            <button type="submit" id="nextButton">Próxima Fase</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="section3" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2">
+                    <img src="assets/img/robozinho-escrevendo.png" alt="">
+                </div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Fase 2: Conhecendo seu Contexto</h2>
+                        <p>Escolha sua faixa etária</p>
+                        <div class="botoes-container">
+                            <div class="botao">
+                                <button>16-20 anos</button>
+                            </div>
+                            <div class="botao">
+                                <button>21-30 anos</button>
+                            </div>
+                            <div class="botao">
+                                <button>31-40 anos</button>
+                            </div>
+                            <div class="botao">
+                                <button>41+anos</button>
+                            </div>
+                        </div>
+                        <button type="submit" id="nextButton">Próxima Fase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2">
+                    <img src="assets/img/robozinho-escrevendo.png" alt="">
+                </div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Fase 3: Escolaridade</h2>
+                        <p>Selecione sua escolaridade</p>
+                        <div class="botoes-container">
+                            <div class="botao">
+                                <button>Ensino Médio</button>
+                            </div>
+                            <div class="botao">
+                                <button>Ensino Superior</button>
+                            </div>
+                            <div class="botao">
+                                <button>Pós-Graduação</button>
+                            </div>
+                            <div class="botao">
+                                <button>Outro</button>
+                            </div>
+                        </div>
+                        <button type="submit" id="nextButton">Próxima Fase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2">
+                    <img src="assets/img/robozinho-escrevendo.png" alt="">
+                </div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Fase 4: Sua Jornada</h2>
+                        <p>Selecione sua disponibilidade</p>
+                        <div class="botoes-container">
+                            <div class="botao">
+                                <button>Tempo-Integral</button>
+                            </div>
+                            <div class="botao">
+                                <button>Meio período</button>
+                            </div>
+                            <div class="botao">
+                                <button>Fins de semana</button>
+                            </div>
+                            <div class="botao">
+                                <button>Horário flexivel</button>
+                            </div>
+                        </div>
+                        <button type="submit" id="nextButton">Próxima Fase</button>
+                    </div>
+                </div>
+        </section>
+        <section id="section4" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2">
+                    <img src="assets/img/robozinho-escrevendo.png" alt="">
+                </div>
+                <div class="form-container">
+                    <div class="border">
+                        <h2>Fase 5: Seus Sonhos</h2>
+                        <p>Escolha sua aréa de interesse</p>
+                        <div class="botoes-container">
+                            <div class="botao">
+                                <button>Designer</button>
+                            </div>
+                            <div class="botao">
+                                <button>Front-End</button>
+                            </div>
+                            <div class="botao">
+                                <button>Back-End</button>
+                            </div>
+                            <div class="botao">
+                                <button>Full-Stack</button>
+                            </div>
+                            <div class="botao">
+                                <button>DevOps</button>
+                            </div>
+                            <div class="botao">
+                                <button>Outro</button>
+                            </div>
+
+                        </div>
+                        <button type="submit" id="nextButton">Próxima Fase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4" class="hidden-section">
+            <div class="content-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="robot-icon2">
+                    <img src="assets/img/robozinho-escrevendo.png" alt="">
+                </div>
+                <div class="form-container">
+                    <div class="border">
+
+                        <h2>Fase 6: Objetivo</h2>
+                        <p>Preparando seu sonho</p>
+                        <div class="botoes-container">
+                            <div class="botao">
+                                <button>Iniciar Carreira</button>
+                            </div>
+                            <div class="botao">
+                                <button>Migrar Carreira</button>
+                            </div>
+                            <div class="botao">
+                                <button>Apenas Estudos</button>
+                            </div>
+
+                            <div class="botao">
+                                <button>Outro</button>
+                            </div>
+                        </div>
+                        <button type="submit" id="nextButton">Concluir jornada</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/progress.js"></script>
+
+    <!-- Acessibilidae Vlibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+
+</html>
