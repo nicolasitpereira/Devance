@@ -69,3 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
     showSection(0);
     updateProgressBar();
 });
+
+document.querySelector(".concluir").addEventListener("click", function() {
+    window.location.href = "../dashboard/index.html";
+});
+  
