@@ -616,12 +616,12 @@ nav .login-btn:hover {
             margin-right: 10px;
 
             & .card {
-                width: 100%;
+                width: 85%;
                 height: 150px;
                 margin-bottom: 20px;
 
                 & h3 {
-                    font-size: 16px;
+                    font-size: 20px;
                     padding: 1px;
                     width: 100%;
                 }
