@@ -462,6 +462,9 @@ nav .login-btn:hover {
     display: flex;
     background-image: url(../img/fundoDevance.jpg);
     
+    & .img-nicolas {
+        transform: scaleX(-1);
+    }
 }
 
 .card-image img {
