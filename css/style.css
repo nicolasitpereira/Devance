@@ -209,9 +209,9 @@ nav .login-btn:hover {
     & .card {
         position: relative;
         width: 400px;
-        height: 250px;
+        height: 220px;
         border-radius: 20px;
-        padding: 30px;
+        padding: 10px 30px;
         color: var(--white);
         transition: box-shadow 0.3s ease, transform 0.3s ease;
 
@@ -249,8 +249,11 @@ nav .login-btn:hover {
 
     & .oneCard, .threeCard, .fiveCard {
         background-color: var(--blue);
+        box-shadow: 0px 0px 5px 0px var(--blue);
         & h3{
-            background-color: var(--dark-blue);
+            color: var(--dark-blue);
+            font-weight: 1300;
+            font-size: 18pt;
             border-radius: 10px;
             padding: 5px;
             text-align: center;
@@ -264,8 +267,11 @@ nav .login-btn:hover {
 
     & .twoCard, .fourCard, .sixCard {
         background-color: var(--dark-blue);
+        box-shadow: 0px 0px 5px 0px var(--dark-blue);
          & h3{
-            background-color: var(--blue);
+            color: var(--white);
+            font-weight: 1300;
+            font-size: 18pt;
             border-radius: 10px;
             padding: 5px;
             text-align: center;
@@ -437,11 +443,11 @@ nav .login-btn:hover {
     border-radius: 15px;
     border: 1px solid var(--purple);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;  
+    width: 290px;  
     text-align: center;
     overflow: hidden;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border 0.3s;
 }
 
